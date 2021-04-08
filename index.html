@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Journal Entries</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Journal entries that can include task lists, things that brightened my day, etc.">
+    <meta name="author" content="Nataly Buhr">
+
+    <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/281/notebook_1f4d3.png">
+</head>
+
+<body>
+    <header>
+        <div>
+            <p><b>All Entries:</b></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#entry1">Entry1</a></li>
+                <li><a href="#entry2">Entry2</a></li>
+                <li><a href="#entry3">Entry3</a></li>
+                <li><a href="#form">Submit your own entry!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Entries to Date</h1>
+
+        <section>
+            <h2 id="entry3">Entry3</h2>
+            <h3>4/7/2021</h3>
+            <ol>
+                <li><input type="checkbox"> <strong>File taxes</strong></li>
+                <li><input type="checkbox"> Water the plants</li>
+                <li><input type="checkbox"> Attend classes</li>
+                <li><input type="checkbox"> Finish econ homework</li>
+                <li><input type="checkbox"> Finish math homework</li>
+                <li><input type="checkbox"> Study for quizzes</li>
+                <li><input type="checkbox"> Buy groceries </li>
+                <li><input type="checkbox"> Schedule dentist appointment</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="entry2">Entry2</h2>
+            <h3>4/6/2021</h3>
+            <p>
+                Today was fairly uneventful, so here are a few memes that make me laugh:
+            </p>
+            <img src="https://cdn.guff.com/site_0/media/32000/31939/items/1374e3e12d4499d267fab25d.jpg" 
+            alt="zoom meme"
+            width="300"
+            />
+            <br>
+            <img src="https://cdn.memes.com/up/33436521601415506/i/1617778007345.jpg" 
+            alt="studying meme"
+            width="300"
+            />
+            <br>
+            <iframe width="300"
+            src = "https://www.youtube.com/embed/qVSy4O3k3u4"></iframe>
+            <p>
+                Plus a song I like to listen to (cover of "Rolling Girl" by <a href="https://www.youtube.com/watch?v=cGd0ogQoEpg">Ashe on Youtube</a>):
+            </p>
+            <audio controls>
+                <source src="https://docs.google.com/uc?export=download&id=1NMn8Q_YBmEzyEt6hmKv_7fwFe0BAvoQa">
+            </audio>
+            <details>
+                <summary>Lyrics</summary>
+                A rollin' girl is always in a dream<br>
+                That never will be coming true<br>
+                There's so much noise inside her little head<br>
+                She scratches it all around<br>
+                She scratches it all around<br><br>
+
+                "No problems" the word comes out so light<br>
+                But in return it's gone to the air<br>
+                It's a mistake, what a mistake<br>
+                It's a matter of finding the odd one out in the end<br>
+                It rolls again!<br><br>
+
+                One more time, one more time<br>
+                Each day I will be rolling one more time<br>
+                So she says, so she says<br>
+                As she plays the meaning of it to her spoken words<br>
+                Are you ready yet?<br>
+                Not so ready yet<br>
+                The future is still so far away to me<br>
+                So I'm holding my breath, just now<br><br>
+
+                A rollin' girl is faraway in wasteland<br>
+                Beyond the colors you can't reach<br>
+                Those overlapping voices in the air<br>
+                She mixes them all around<br>
+                She mixes them all around<br><br>
+
+                "No problems" the word came out so light<br>
+                But now it vanished without a trace<br>
+                She said that I don't give a damn<br>
+                So let's cause some mistakes with me<br>
+                She tempts me on this hill road<br><br>
+
+                One more time, one more time<br>
+                I beg you to roll me one more time<br>
+                So she says, so she says<br>
+                As she lays the meaning of it to unspoken words<br>
+                Are you ready yet?<br>
+                Just one moment<br>
+                It nearly should be here to show me something<br>
+                So I'm holding my breath, just now<br>
+                One more time, one more time<br>
+                Each day I will be rolling one more time<br>
+                So she says, so she says<br>
+                As she plays the sound of laughter to her spoken words<br>
+                Are you ready yet?<br>
+                I'm ready now<br>
+                You must be so sick and tired of this<br>
+                So I stop my breathing, just now<br>
+            </details>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="entry1">Entry1</h2>
+            <h3>4/5/2021</h3>
+            <p>
+                Some miscellaneous things I've learned recently:<br><br>
+
+                The 'span' element can be used to color text in part of an HTML document, resulting in something like this: <span style="color:blue">blue</span>, <span style="color:red">red</span>, <span style="color:green">green</span>.<br><br>
+
+                Filing taxes <em>absolutely sucks</em>.<br><br>
+
+                Defeating an anemo slime in <i>Genshin Impact</i> creates a gust of air that you can use to fly.
+            </p>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="form">Submit your own entry!</h2>
+
+            <form id="submissionform">
+                <fieldset>
+                    <legend>Name</legend>
+                    <label for="name">Enter name here:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Age</legend>
+                    <input type="radio" id="underage" name="age" value="underage">
+                    <label for="underage">Under 18 (submission won't be accepted!)</label>
+                    <input type="radio" id="ofage" name="age" value="ofage">
+                    <label for="ofage">18 or older</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Reason for Submission</legend>
+                    <input type="checkbox" id="reason1" name="reason1" value="fun">
+                    <label for="reason1">I want to submit an entry for fun</label>
+                    <input type="checkbox" id="reason2" name="reason2" value="none">
+                    <label for="reason2">I don't know why I want to submit an entry</label>
+                    <input type="checkbox" id="reason3" name="reason3" value="nocomment">
+                    <label for="reason3">Why do I have to explain myself to you?</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Date of Submission</legend>
+                    <label for="submitted">Today's date:</label>
+                    <input type="date" id="submitted" name="datesubmitted">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Type of Submission</legend>
+                    <label for="type">What type of entry are you submitting?</label>
+                    <input list="types" id="type" name="types"/>
+                    <datalist id="types">
+                        <option value="Memepost"></option>
+                        <option value="Tasklist"></option>
+                        <option value="Text Only"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <legend>Journal Entry Contents</legend>
+                    <label for="contents">Write here:</label>
+                    <textarea id="contents" name="contents" rows="4" cols="100"></textarea>
+                </fieldset>
+                <button type="button">Submit Entry</button>
+            </form>
+            <br>
+
+            <label for="rating">How would you rate this page?</label>
+            <select id="rating" name="ratinglist" form="submissionform">
+                <option value="none">No rating</option>
+                <option value="good">Good</option>
+                <option value="bad">Bad</option>
+                <option value="meh">Meh</option>
+            </select>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <em>Thanks for checking out this page!</em>
+        </p>
+    </footer>
+</body>
+</html>
