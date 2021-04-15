@@ -1,30 +1,127 @@
-body {
+body { /* change page background & text colors */
   background-color: #D6EFF5; /* Set background to pastel blue */
   color: midnightblue;
 }
 
-.p1 {
+.p1 { /* change font of any p with .p1 class */
   font-family: Arial, Verdana, sans-serif;
 }
 
-a {
+.box { /* test out the box model with the header at the top of the page */
+  border-style: dotted;
+  border-color: aliceblue;
+  border-width: 10px;
+  border-radius: 1em;
+  padding: 1mm 1mm 1mm 1mm;
+  margin: auto;
+}
+
+a { /* change font of links */
   font-family: Arial, Verdana, sans-serif;
 }
 
-summary {
+summary { /* change font type & color of tab that opens lyrics */
   font-family: Arial, Verdana, sans-serif;
   color: hsl(237, 78%, 43%);
 }
 
-details {
+details { /* change font type & color of lyrics */
   font-family: Arial, Verdana, sans-serif;
   color: rgb (60, 60, 60);
 }
 
-h3 {
+h2, h3 { /* apply underline & overline, modify margins of medium & small headers */
   text-decoration: underline overline;
+  margin-top: 1px;
+  margin-left: 1px;
+  margin-bottom: 1px;
+  margin-right: 1px;
 }
 
-h1 {
+h1 { /* modify margins, padding, and alignment of largest header */
   text-align: center;
+  padding-top: 1ex;
+  padding-bottom: 1ex;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin: .5cm .5cm .5cm .5cm;
+}
+
+button:hover { /* make button text red when hovering over it */
+  color: red;
+}
+
+button:active { /* make button text yellow when hovering over it */
+  color: yellow;
+}
+
+@media only screen and (max-width: 700px) { /* only apply these changes if window width < 700px */
+
+  /* the changes below make the site fairly unappealing */
+
+  body { /* make the site's background beige */
+    background-color: beige;
+  }
+
+  h3 {
+    display: inline-block; /* change the display style of the smallest headers */
+  }
+
+  h2 { /* change the display style of the medium headers */
+    display: block;
+    position: relative;
+    left: 10px;
+  }
+
+  .box { /* change width of box model test */
+    max-width: 600px;
+    min-width: 500px;
+  }
+
+  * { /* make all text green unless otherwise specified */
+    color: green;
+  }
+
+  div > p { /* for p children of div, change the background and position */
+    background-color: rgb(216, 253, 174);
+    position: static;
+  }
+
+  div p { /* for p descendants of div, underline the text */
+    text-decoration: underline;
+  }
+
+  p.p1 { /* change the font family of any p element wih class p1 */
+    font-family: Georgia, "Times New Roman", serif;
+  }
+
+  .flexcontainer { /* test out the flex layout with entry 3 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+
+  .gridcontainer { /* test out the grid layout with entry 1 */
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+  }
+
+  #form { /* change the color of the form header */
+    color:darkmagenta;
+  }
+
+  label[for] { /* change the color of the text in the form */
+    color:hotpink;
+  }
+
+  h2 + h3 { /* for small headers after medium headers, change the background */
+    background-color:rgb(255, 255, 255);
+  }
+
+  h3 ~ p { /* for p siblings of small headers, change the background */
+    background-color:lightsalmon;
+  }
 }
