@@ -20,3 +20,11 @@ details {
   font-family: Arial, Verdana, sans-serif;
   color: rgb (60, 60, 60);
 }
+
+h3 {
+  text-decoration: underline overline;
+}
+
+h1 {
+  text-align: center;
+}
