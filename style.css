@@ -6,3 +6,17 @@ body {
 .p1 {
   font-family: Arial, Verdana, sans-serif;
 }
+
+a {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+summary {
+  font-family: Arial, Verdana, sans-serif;
+  color: hsl(237, 78%, 43%);
+}
+
+details {
+  font-family: Arial, Verdana, sans-serif;
+  color: rgb (60, 60, 60);
+}
