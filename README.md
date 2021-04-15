@@ -1,1 +1,1 @@
-https://nbuhr9.github.io/Lab2/
+https://nbuhr9.github.io/sp21-cse110-lab3/
